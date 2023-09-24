@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: white;
+    line-height: 2.2;
+    font-size: 0.875rem;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  li {
+    padding: 10px;
+  }
+  
+  .navbar-a {
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  nav {
+    background: white;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .fa-bars {
+    font-size: 1.5rem;
+    color: #e94949;
+    cursor: pointer;
+  }
+  
+  .fa-bars:hover {
+    color: black;
+  }
+  
+  .navbar-a {
+    color: grey;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+  }
+  
+  .navbar-a:hover {
+    background: #f8a5a5;
+    color: #e94949;
+    padding-left: 1.5rem;
+  }
+  
+  .menu {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  
+  .show-menu {
+    height: auto;
+    padding-bottom: 2%;
+  }
+  
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 800px) {
+    .nav-main {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .nav-header {
+      padding: 0;
+    }
+  
+    .fa-bars {
+      display: none;
+    }
+  
+    .menu {
+      height: auto;
+      display: flex;
+    }
+  
+    .navbar-a {
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .navbar-a:hover {
+      padding: 0;
+      background: transparent;
+    }
+  }
+  
+/* ----------------- footer -------------------- */
+.footer {
+    position: relative;
+    background-color: rgb(241, 241, 241);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* top: 0; */
+  }
+  
+  .social-media a{
+    color: black;
+    padding: 3px;
+  }
+  .social-media{
+    margin-bottom: 10px;
+  }
+  .social-media a:hover{
+    color: #1500ff;
+    font-weight: bold;
+  }
+  /* ----------------- footer-end -------------------- */
