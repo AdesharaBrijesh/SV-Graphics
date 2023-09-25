@@ -417,6 +417,13 @@ div.desc {
   float: left;
   width: 23%;
 }
+b{
+  font-size: x-large;
+}
+
+.apd{
+  font-size: x-large;
+}
 
 @media only screen and (max-width: 900px) {
   .responsive {
