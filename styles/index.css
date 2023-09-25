@@ -67,7 +67,7 @@ nav {
 }
 
 .logo{
-  width: 10%;
+  width: 15%;
 }
 @media (min-width: 800px) {
   .nav-main {
@@ -255,6 +255,12 @@ nav {
   .div-info div{
     width: 90%;
   }
+  .div-info-p{
+    font-size: 600%;
+    opacity: 50%;
+    display: inline;
+  }
+  
 }
 
 /* content container after info */
@@ -313,6 +319,55 @@ nav {
   padding: 10px;
 }
 
+/* new content container after info */
+
+.polaroid-c {
+  width: 30%;
+  background-color: white;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  margin-bottom: 25px;
+}
+
+.container-c {
+  text-align: center;
+  padding: 10px 20px;
+}
+.content-cc{
+  display: flex;
+}
+
+/* .content-ccc{
+  display: flex;
+} */
+@media only screen and (max-width: 900px) {
+  .polaroid-c {
+    width: 50%;
+    background-color: white;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin-bottom: 25px;
+  }
+  
+  .container-c {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .content-cc{
+    display: flex;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .polaroid-c {
+    width: 100%;
+    background-color: white;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin-bottom: 25px;
+  }
+  
+  .container-c {
+    text-align: center;
+    padding: 10px 20px;
+  }
+}
 
 /* ----------------- portfolio -------------------- */
 /* 
