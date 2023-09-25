@@ -393,6 +393,7 @@ nav {
   display: none;
   background-color: white;
   overflow: hidden;
+  height: 100%;
 }
 
 div.gallery {
@@ -417,7 +418,9 @@ div.desc {
   padding: 1%;
   float: left;
   width: 23%;
+  height: 100%;
 }
+
 b{
   font-size: x-large;
 }
