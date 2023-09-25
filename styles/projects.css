@@ -5,6 +5,7 @@ body {
   background: white;
   line-height: 2.2;
   font-size: 0.875rem;
+  
 }
 
 ul {
@@ -26,12 +27,12 @@ nav {
 
 .fa-bars {
   font-size: 1.5rem;
-  color: #e94949;
+  color: #000000;
   cursor: pointer;
 }
 
 .fa-bars:hover {
-  color: black;
+  color: rgb(39, 170, 225);
 }
 
 .navbar-a {
@@ -43,14 +44,14 @@ nav {
 }
 
 .navbar-a:hover {
-  background: #f8a5a5;
-  color: #e94949;
+  background: rgb(39, 170, 225);
+  color: rgb(0, 0, 0);
   padding-left: 1.5rem;
 }
 
 .menu {
   height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 0.3s linear;
 }
 
@@ -61,11 +62,13 @@ nav {
 
 .nav-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
 
+.logo{
+  width: 15%;
+}
 @media (min-width: 800px) {
   .nav-main {
     max-width: 1170px;
@@ -92,84 +95,189 @@ nav {
     padding: 0;
     margin: 0 0.5rem;
   }
+
   .navbar-a:hover {
     padding: 0;
     background: transparent;
   }
+
+  .logo{
+    width: 10%;
+    height: 80%;
+  }
 }
+
+/* hero-image */
+.container {
+  margin-left: 5%;
+  position: relative;
+  width: 90%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(229, 232, 236);
+  overflow: hidden;
+  width: 60%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 90%;
+}
+
+.container:hover .overlay {
+  height: 70%;
+}
+
+.text {
+  color: black;
+  font-size: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media only screen and (max-width: 1500px) {
+  .text {
+    font-size: 130%;
+  }
+  .button{
+    font-size: smaller;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .text {
+    font-size: 100%;
+  }
+  .button{
+    font-size: smaller;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .text {
+    font-size: 85%;
+  }
+  .button{
+    font-size: smaller;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .overlay {
+    display: none;
+  }
+}
+/* container button */
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: rgb(39, 170, 225);
+  /* background-size: 100%; */
+  color: #fff;
+  border: none;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgb(44, 43, 44) 10.8%,
+    rgb(0, 0, 0) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+.container-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: larger;
+}
+
 /* ----------------- portfolio -------------------- */
 
-.accordion {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: rgb(34, 34, 34);
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 42.5%;
-    cursor: pointer;
-    width: 15%;
-    transition: 0.4s;
-  }
-  
-  .panel {
-    margin-top: 20px;
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-  }
-  
-  div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
+.panel {
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+div.gallery {
+  border: 2px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 2px solid black;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 1%;
+  float: left;
+  width: 23%;
+}
+
+@media only screen and (max-width: 500px) {
   .responsive {
-    padding: 6px;
-    float: left;
-    width: 24.99999%;
+    width: 40%;
+    margin-left: 5%;
   }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
+}
+
+@media only screen and (max-width: 200px) {
+  .responsive {
+    width: 90%;
   }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  /* ----------------- portfolio-end -------------------- */
-  /* ----------------- footer -------------------- */
+}
+
+/* ----------------- portfolio-end -------------------- */
+/* ----------------- footer -------------------- */
 .footer {
-  position: relative;
+  position: fixed;
   background-color: rgb(241, 241, 241);
   bottom: 0;
   left: 0;
   right: 0;
   /* top: 0; */
 }
-
 .social-media a{
   color: black;
   padding: 3px;
